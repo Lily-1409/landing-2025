@@ -1,0 +1,19 @@
+.input-text {
+  border: 1px solid #ddd;
+  height: 40px;
+  border-radius: 5px;
+  padding: 0 10px;
+  outline: none;
+}
+
+.input-text:focus {
+  border-color: #ff9100;
+}
+
+.input-text--expanded {
+  width: 100%;
+}
+
+.input-text[aria-invalid] {
+  border-color: #ff0000;
+}

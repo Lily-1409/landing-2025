@@ -1,0 +1,123 @@
+.diagram-box {
+  padding: 60px 0 210px;
+  background-image: url('../../assets/images/statistics-bg-1.svg');
+  background-repeat: no-repeat;
+  background-size: 4633px 270px;
+  background-position: 25.8% 100%;
+  position: relative;
+  overflow: hidden;
+
+  @media (max-width: 767px) {
+    padding: 0 0 252px;
+    background-position: 46.4% 125%;
+  }
+}
+
+.diagram-box__wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.diagram-box__parallax-item--one {
+  bottom: 226px;
+  bottom: 25%;
+  left: -100%;
+  position: absolute;
+  background-image: url('../../assets/images/hand1.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 823px;
+  height: 377px;
+  animation-duration: 1s;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards;
+  width: 44%;
+
+    @media (max-width: 1440px) {
+      // width: 620px;
+      // height: 283px;
+      // top: 330px;
+    }
+
+    @media (max-width: 1023px) {
+      // width: 440px;
+      // height: 201px;
+      // top: unset;
+      // bottom: 170px;
+    }
+
+    @media (max-width: 767px) {
+      bottom: 57px;
+      left: -96px;
+      width: 286px;
+      height: 134px;
+    }
+}
+
+@supports (background-image: -webkit-image-set(url('../../assets/images/webp/hand1.webp') 1x)) {
+  .diagram-box__parallax-item--one {
+    background-image: -webkit-image-set(
+      url('../../assets/images/webp/hand1.webp') 1x
+    );
+  }
+}
+
+@media (min-width: 768px) {
+  @keyframes hand1 {
+    to {
+      left: -12.7%;
+    }
+  }
+}
+
+.diagram-box__parallax-item--two {
+  position: absolute;
+  top: -130px;
+  top: -15%;
+  right: -100%;
+  content: '';
+  background-image: url('../../assets/images/hand2.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 984px;
+  width: 52%;
+  height: 906px;
+  animation-duration: 1s;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards;
+
+  @media (max-width: 1440px) {
+    // width: 738px;
+    // height: 680px;
+    // top: -5px;
+  }
+
+  @media (max-width: 1023px) {
+    // width: 526px;
+    // height: 485px;
+    // top: 0px;
+  }
+
+  @media (max-width: 767px) {
+    width: 285px;
+    height: 250px;
+    top: 248px;
+    right: -116px;
+  }
+}
+
+@supports (background-image: -webkit-image-set(url('../../assets/images/webp/hand2.webp') 1x)) {
+  .diagram-box__parallax-item--two {
+    background-image: -webkit-image-set(
+      url('../../assets/images/webp/hand2.webp') 1x
+    );
+  }
+}
+
+@media (min-width: 768px) {
+  @keyframes hand2 {
+    to {
+      right: -21.5%;
+    }
+  }
+}

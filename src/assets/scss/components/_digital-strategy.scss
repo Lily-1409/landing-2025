@@ -1,0 +1,270 @@
+.strategy {
+  padding: 196px 0 84px;
+
+  @media (max-width: 767px) {
+    padding: 70px 0 36px;
+  }
+}
+
+.strategy__title {
+  margin-bottom: 52px;
+  max-width: 1072px;
+  color: #000000;
+
+  @media (max-width: 767px) {
+    margin-bottom: 16px;
+  }
+}
+
+.strategy__inner {
+  display: flex;
+  justify-content: space-between;
+  gap: 70px;
+}
+
+.strategy__image-wrapper {
+  display: flex;
+  position: relative;
+  // width: 700px;
+  // height: 700px;
+  flex: 1;
+  max-width: 840px;
+
+  @media (max-width: 767px) {
+    display: none;
+  }
+}
+
+.strategy__image {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  // width: 100%;
+  // height: auto;
+  visibility: hidden;
+  opacity: 0;
+  transition:
+    visibility 0s linear 0.5s,
+    opacity 0.5s linear;
+}
+
+.strategy__image--active {
+  opacity: 1;
+  visibility: visible;
+  transition-delay: 0s;
+}
+
+.strategy__content {
+  width: 40.5%;
+  position: relative;
+  min-height: 700px;
+
+  @media (max-width: 767px) {
+    width: 100%;
+  }
+}
+
+.strategy__content-title {
+  font-family: Gilroy;
+  font-size: 38px;
+  line-height: 120%;
+  font-weight: 700;
+  color: #000000;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 34px;
+
+  @media (max-width: 767px) {
+    font-size: 18px;
+    margin-bottom: 26px;
+  }
+}
+
+.strategy__list {
+  position: absolute;
+  top: 24.3%;
+  left: 0;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+
+  list-style-type: none;
+}
+
+.strategy__accordion-button {
+  border: none;
+  outline: none;
+  padding: 30px;
+  width: 100%;
+  border-radius: 15px;
+  cursor: pointer;
+
+  @media (max-width: 767px) {
+    padding: 16px;
+  }
+}
+
+.loading-bar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 13px;
+  background: #e0e0e0;
+  overflow: hidden;
+  border-radius: 20px 20px 0 0;
+  display: none;
+
+  @media (max-width: 767px) {
+    height: 8px;
+  }
+}
+
+.loading-progress {
+  height: 100%;
+  width: 0;
+  background: #e9f03c;
+  animation: fillProgress 5s linear;
+}
+
+.loading-progress--fill {
+  animation: unset;
+  width: 100%;
+}
+
+@keyframes fillProgress {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+.strategy-card {
+  position: relative;
+  background-color: #f1eee6;
+  border-radius: 15px;
+  padding: 30px;
+  transition: height 0.2s ease;
+}
+
+.strategy-card--active {
+  background-color: #012dd4;
+  padding-top: 40px;
+  padding-bottom: 20px;
+}
+
+.strategy-card--active .loading-bar {
+  display: block;
+}
+
+.strategy-card--active .strategy-card__title {
+  color: #ffffff;
+  margin-bottom: 12px;
+}
+
+.strategy-card--active .strategy-card__arrow svg {
+  color: #e9f03c;
+  transform: rotate(90deg);
+  top: 21px;
+  right: 13px;
+}
+
+.strategy-card--active .strategy-card__inner::before {
+  display: block;
+
+  @media (max-width: 767px) {
+    display: none;
+  }
+}
+
+.strategy-card--active .strategy-card__description {
+  visibility: visible;
+}
+
+.strategy-card__title {
+  margin: 0;
+  border-radius: 15px;
+  font-family: Gilroy;
+  font-size: 28px;
+  line-height: auto;
+  font-weight: 700;
+  color: #000000;
+  text-align: start;
+  cursor: pointer;
+
+  @media (max-width: 767px) {
+    font-size: 16px;
+    margin-right: 20px;
+    max-width: 236px;
+  }
+}
+
+.strategy-card__inner {
+  height: 0;
+  overflow: hidden;
+  transition: height 1s ease;
+  @media (max-width: 767px) {
+    flex-direction: column;
+    padding: 24px 16px;
+  }
+}
+
+.strategy-card__inner::before {
+  position: absolute;
+  content: '';
+  width: 68px;
+  height: 38px;
+  background-image: url('../../assets/images/arrow-blue.svg');
+  top: 0;
+  left: -14%;
+  transform: translateY(83%);
+  display: none;
+}
+
+.strategy-card__description {
+  font-family: Gilroy;
+  font-size: 18px;
+  line-height: 150%;
+  font-weight: 400;
+  color: #f4f2f9;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  visibility: hidden;
+
+  @media (max-width: 767px) {
+    font-size: 14px;
+    gap: 6px;
+  }
+}
+
+.strategy-card__image {
+  display: none;
+
+  @media (max-width: 767px) {
+    display: block;
+  }
+}
+
+.strategy-card__arrow {
+  position: absolute;
+  top: 13px;
+  right: 13px;
+  background-color: transparent;
+  border-radius: 50%;
+  width: 26px;
+  height: 26px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  display: none;
+
+  @media (max-width: 767px) {
+    display: flex;
+  }
+}

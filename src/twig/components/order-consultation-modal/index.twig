@@ -1,0 +1,63 @@
+<div class="order-consultation-modal">
+	<div class="order-consultation-modal__overlay"></div>
+	<div class="order-consultation-modal__content">
+		<div class="order-consultation-modal__box">
+			<div class="order-consultation-modal__wrapper">
+				<button class="order-consultation-modal__close-button"></button>
+				<div class="order-consultation__content">
+					<h2 class="order-consultation__title">Заказать консультацию</h2>
+					<p class="order-consultation__description">Оставьте ваши контакты и&nbsp;наш специалист свяжется с&nbsp;вами в&nbsp;течение рабочего дня.</p>
+				</div>
+				<div class="order-consultation__form-wrapper">
+					<form class="order-consultation__form" id="order-consultation-form" novalidate>
+						<div class="order-consultation__form-field">
+							<div class="form-group">
+								<input 
+									class="order-consultation__input form-control" 
+									type="text" 
+									name="name" 
+									placeholder="Имя" 
+									required data-pristine-required-message="Пожалуйста, введите свое имя"
+								>
+							</div>
+							<div class="form-group">
+								<input 
+									class="order-consultation__input form-control" 
+									type="text" 
+									name="company" 
+									placeholder="Компания" 
+									required 
+									data-pristine-required-message="Пожалуйста, введите название Вашей компании"
+								>
+							</div>
+							<div class="form-group">
+								<input 
+									class="order-consultation__input form-control" 
+									type="tel" 
+									name="phone" 
+									placeholder="Телефон"
+									data-pristine-pattern="/^([0-9]|\+|\-|\(|\)|\s)*$/"
+									required 
+									data-pristine-required-message="Пожалуйста, введите свой номер телефона"
+									data-pristine-pattern-message="Неверный формат номера телефона"
+								>
+							</div>
+							<div class="form-group">
+								<input 
+									class="order-consultation__input form-control" 
+									type="email" 
+									name="E-mail" 
+									placeholder="E-mail" 
+									required 
+									data-pristine-required-message="Пожалуйста, введите свой адрес электронной почты"
+									data-pristine-email-message="Адрес электронной почты вводится в формате example@example.xxx"
+								>
+							</div>
+							<button class="order-consultation__submit button" type="submit">Заказать консультацию</button>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>

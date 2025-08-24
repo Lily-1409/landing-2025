@@ -1,0 +1,11 @@
+.svg {
+  @include square(32px);
+}
+
+.svg--blue {
+  fill: #00a7ff;
+}
+
+.svg--green {
+  fill: #008d00;
+}

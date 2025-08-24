@@ -1,0 +1,68 @@
+extends ../layouts/default.pug
+
+block title
+	title Strikt Html Starter
+
+block page_opengraph
+	meta(property="og:title" content="Strikt Html Starter PUG index page")
+	meta(property="og:description" content="Strikt Html Starter PUG index page description")
+
+//-
+	block page_opengraph_images
+		meta(property="og:image" content="./assets/images/og.png")
+		meta(property="og:image:secure_url" content="./assets/images/og.png")
+		meta(property="og:image:width" content="100")
+		meta(property="og:image:height" content="100")
+
+block styles
+	link(
+		href="./assets/css/index.min.css"
+		rel="stylesheet"
+	)
+block content
+	.wrapper
+		h1.example-h1 Strikt Html Starter (PUG)
+		.example-block
+			.example-block__title Svg icons
+			.example-block__row
+				+icon('anchor').svg
+				+icon('compass').svg.svg--blue
+				+icon('fish').svg.svg--green
+		.example-block.example-block--images
+			.example-block__title Minimized images and webp
+			.example-block__row
+				img(
+					src="./assets/images/logo-first.png"
+					alt="png"
+				)
+				img(
+					src="./assets/images/webp/logo-second.webp"
+					alt="webp"
+				)
+		.example-block
+			.example-block__title Form validation
+			form#example-form.example-form
+				.caption This is a test form for validation check.<br>It will not send data anywhere.
+				.form-group
+					input(
+						data-pristine-required
+						type="text"
+						name="username"
+						placeholder="Username"
+						class="input-text input-text--expanded"
+					)
+				.form-group
+					input(
+						data-pristine-required
+						type="password"
+						name="password"
+						placeholder="Password"
+						class="input-text input-text--expanded"
+					)
+				.form-field.form-field--right
+					button(
+						type="submit"
+						class="button"
+					) Login
+block scripts
+	script(src="./assets/js/index.bundle.js")

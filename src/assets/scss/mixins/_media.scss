@@ -1,0 +1,13 @@
+/*
+  How to use
+
+  @include media($tablet-l) {
+    margin: 0;
+  }
+*/
+
+@mixin media($media) {
+  @media #{$media} {
+    @content;
+  }
+}

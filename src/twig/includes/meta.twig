@@ -1,0 +1,43 @@
+{# Default meta #}
+<meta charset="utf-8"/>
+<meta name="format-detection" content="telephone=no"/>
+<meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+<meta name="description" content="{{ description is defined and description is not null ? description : 'Strikt Html Starter TWIG description' }}">
+<meta name="keywords" content="{{ keywords is defined and description is not null ? keywords : 'strikt, starter, twig' }}">
+<link rel="alternate" href="https://gitlab.com/Nikanorov/strikt-frontend-starter" hreflang="ru-ru"/>
+{# // Default meta #}
+
+{# Default opengraph #}
+{# <meta property="og:url" content="https://gitlab.com/Nikanorov/strikt-frontend-starter">
+<meta property="og:locale" content="ru-ru">
+<meta property="og:rich_attachment" content="true">
+<meta property="og:site_name" content="GulpTemplate">
+<meta property="og:type" content="business.business">
+<meta property="business:contact_data:street_address" content="Russia, Moscow, Street 16">
+<meta property="business:contact_data:locality" content="Moskow">
+<meta property="business:contact_data:postal_code" content="117638">
+<meta property="business:contact_data:country_name" content="Russia">
+<meta property="place:location:latitude" content="55.664040">
+<meta property="place:location:longitude" content="37.597971">
+<meta property="business:contact_data:email" content="info@test.email">
+<meta property="business:contact_data:phone_number" content="+7-999-999-99-99"> #}
+{# // Default opengraph#}
+
+{# Page opengraph #}
+<meta property="og:title" content="{{ ogTitle is defined and ogTitle is not null ? ogTitle : 'Strikt Html Starter TWIG' }}">
+<meta property="og:description" content="{{ ogDescription is defined and ogDescription is not null ? ogDescription : 'Strikt Html Starter TWIG description' }}">
+{# // Page opengraph #}
+
+{# Opengraph images #}
+
+
+{% set image = ogImage is defined and ogImage is not null  ? ogImage : 'assets/images/logotype-openGraph.png' %}
+
+<meta property="og:image" content="{{ image }}">
+<meta property="og:image:secure_url" content="{{ image }}">
+<meta property="og:image:width" content="{{ ogImageWidth is defined and ogImageWidth is not null  ? ogImageWidth : 100 }}">
+<meta property="og:image:height" content="{{ ogImageHeight is defined and ogImageHeight is not null  ? ogImageHeight : 100 }}">
+
+
+{# // Opengraph images #}

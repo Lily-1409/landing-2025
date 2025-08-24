@@ -1,0 +1,33 @@
+doctype html
+<!--[if IE]><![endif]-->
+<!--[if IE 8 ]><html prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# business: http://ogp.me/ns/business#"  dir="ltr" lang="ru" class="ie8"><![endif]-->
+<!--[if IE 9 ]><html prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# business: http://ogp.me/ns/business#"  dir="ltr" lang="ru" class="ie9"><![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!-->
+html(
+	prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# business: http://ogp.me/ns/business#"
+	dir="ltr"
+	lang="ru"
+)
+	head(lang="ru")
+		block title
+
+		include ../includes/meta.pug
+
+		//- Page opengraph
+		block page_opengraph
+		//- End Page opengraph
+
+		//- Opengraph images
+		block page_opengraph_images
+		//- End Opengraph images
+
+	include ../includes/favicons.html
+	block styles
+	body
+		main.page
+			include ../components/icon/index.pug
+			include ../components/header/index.pug
+			section.content
+				block content
+			include ../components/footer/index.pug
+		block scripts

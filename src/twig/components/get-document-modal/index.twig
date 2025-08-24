@@ -1,0 +1,60 @@
+<div class="get-document-modal">
+	<div class="get-document-modal__overlay"></div>
+	<div class="get-document-modal__content">
+		<div class="get-document-modal__box">
+			<div class="get-document-modal__wrapper">
+				<button class="get-document-modal__close-button"></button>
+				<div class="get-document__content">
+					<h2 class="get-document__title">Запросить документы</h2>
+					<p class="get-document__description">Оставьте ваши данные и&nbsp;мы отправим вам документы в&nbsp;течение рабочего дня.</p>
+				</div>
+				<div class="get-document__form-wrapper">
+					<form class="get-document__form" id="get-document-form" novalidate>
+						<div class="get-document__form-field">
+							<div class="form-group">
+								<input
+									class="get-document__input form-control"
+									type="email"
+									name="email"
+									placeholder="E-mail"
+									required
+									data-pristine-required-message="Пожалуйста, введите свой адрес электронной почты"
+									data-pristine-email-message="Адрес электронной почты вводится в формате example@example.xxx"
+								>
+							</div>
+							<div class="form-group">
+								<input
+									class="get-document__input form-control"
+									type="text"
+									name="name"
+									placeholder="Имя"
+									required data-pristine-required-message="Пожалуйста, введите свое имя"
+								>
+							</div>
+							<div class="form-group">
+								<input
+									class="get-document__input form-control"
+									type="text"
+									name="nameCompany"
+									placeholder="Название компании"
+									required data-pristine-required-message="Пожалуйста, введите название компании"
+								>
+							</div>
+							<div class="form-group">
+								<input
+									class="get-document__input form-control"
+									type="text"
+									name="fieldCompany"
+									placeholder="Область деятельности"
+									required data-pristine-required-message="Пожалуйста, введите область деятельности компании"
+								>
+							</div>
+							<button class="get-document__submit button" type="submit">Получить документы</button>
+						</div>
+					</form>
+					<div class="get-document__send-result"></div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>

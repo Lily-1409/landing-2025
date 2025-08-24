@@ -1,0 +1,97 @@
+.ai {
+  max-width: 1600px;
+  padding: 95px 20px;
+  margin: 0 auto;
+  position: relative;
+
+  @media (max-width: 1440px) {
+    padding-top: 68px;
+    padding-bottom: 68px;
+  }
+
+  @media (max-width: 1023px) {
+    padding-top: 48px;
+    padding-bottom: 48px;
+  }
+
+  @media (max-width: 767px) {
+    padding-top: 24px;
+    padding-bottom: 24px;
+  }
+}
+
+.ai__wrapper {
+  margin: 0 -20px;
+  overflow: hidden;
+}
+
+.ai__list {
+  margin: 0;
+  padding: 0 20px 20px;
+  list-style-type: none;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 145px;
+  margin-bottom: -20px;
+
+  overflow-x: scroll;
+
+  @media (max-width: 1506px) {
+    cursor: grab;
+  }
+
+  @media (max-width: 767px) {
+    gap: 26px;
+  }
+}
+
+.ai__list li {
+  flex: 1 0 0;
+}
+
+.ai__list li img {
+  max-width: unset;
+  pointer-events: none;
+  user-select: none;
+}
+
+.ai__item-img {
+  object-fit: contain;
+}
+
+.ai__item-img--chatGPT {
+  @media (max-width: 767px) {
+    width: 80px;
+    height: 21px;
+  }
+}
+
+.ai__item-img--yandexGPT {
+  @media (max-width: 767px) {
+    width: 95px;
+    height: 15px;
+  }
+}
+
+.ai__item-img--perplexity {
+  @media (max-width: 767px) {
+    width: 81px;
+    height: 15px;
+  }
+}
+
+.ai__item-img--gemini {
+  @media (max-width: 767px) {
+    width: 59px;
+    height: 22px;
+  }
+}
+
+.ai__item-img--liamaIndex {
+  @media (max-width: 767px) {
+    width: 101px;
+    height: 34px;
+  }
+}

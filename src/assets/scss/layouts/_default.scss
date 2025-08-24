@@ -1,0 +1,10 @@
+.container {
+  width: 100%;
+  max-width: $max-width + $common-padding * 2;
+  padding: 0 $common-padding;
+  margin: 0 auto;
+
+  @media (max-width: 767px) {
+    padding: 0 20px;
+  }
+}

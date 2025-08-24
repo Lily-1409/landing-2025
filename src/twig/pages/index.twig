@@ -1,0 +1,53 @@
+{% extends "../layouts/default.twig" %}
+
+{# {% macro commonWrapper(content) %}
+    <section class="common-wrapper">
+        {{ content }}
+    </section>
+{% endmacro %} #}
+
+{#
+	ogImage: '/pages/about/about.jpg',
+	ogImageWidth: 1280,
+	ogImageHeight: 720
+#}
+
+{% set meta = {
+	title: 'Strikt — Разработка стартапов на основе LLM, автоматизация бизнес-процессов с помощью GPT',
+	description: 'Strikt — Разработка стартапов на основе LLM, автоматизация бизнес-процессов с помощью GPT',
+	keywords: 'strikt, атовматизация, искусственный интеллект, llm, gpt',
+	ogTitle: 'Strikt — разработка стартапов с искуственным интеллектом',
+	ogDescription: 'Автоматизация бизнес-процессов с помощью GPT и LLM',
+	ogImage: 'assets/images/logotype-openGraph.png',
+	ogImageWidth: 195,
+	ogImageHeight: 170
+} %}
+
+{% block styles %}
+	<link href="./assets/css/index.min.css" rel="stylesheet">
+{% endblock %}
+
+{% block content %}
+	{% include '../components/intro/index.twig' %}
+	{% include '../components/digital-strategy/index.twig' %}
+	{% include '../components/ai-solution/index.twig' %}
+	{% include '../components/ticker/index.twig' %}
+	{% include '../components/advantages/index.twig' %}
+	<div class="common-wrapper">
+		{% include '../components/how-work/index.twig' %}
+		{% include '../components/projects/index.twig' %}
+	</div>
+	{% include '../components/common-wrapper/index.twig' %}
+	{% include '../components/why/index.twig' %}
+	{% include '../components/benefit/index.twig' %}
+	{% include '../components/consultation/index.twig' %}
+	{% include '../components/projects-modal/index.twig' %}
+	{% include '../components/order-consultation-modal/index.twig' %}
+	{% include '../components/get-document-modal/index.twig' %}
+{% endblock %}
+
+{% block scripts %}
+	<script src="/public/js/lazysizes.min.js"></script>
+	<script src="/public/js/pristine.js" type="text/javascript"></script>
+	<script src="./assets/js/index.bundle.js"></script>
+{% endblock %}

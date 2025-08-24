@@ -1,0 +1,159 @@
+.benefit {
+  padding: 94px 0 145px;
+
+  // @media (max-width: 1440px) {
+  //   padding: 96px 0 170px;
+  // }
+
+  // @media (max-width: 1023px) {
+  //   padding: 68px 0 120px;
+  // }
+
+  @media (max-width: 767px) {
+    padding: 26px 0 37px;
+  }
+}
+
+.benefit__wrapper {
+  display: flex;
+  gap: 50px;
+  justify-content: space-between;
+  align-items: center;
+
+  @media (max-width: 767px) {
+    flex-direction: column;
+    gap: 20px;
+  }
+}
+
+.benefit__image-wrapper {
+  display: flex;
+  justify-content: center;
+  width: 50%;
+
+  // @media (max-width: 1440px) {
+  //   padding-left: 30px;
+  // }
+
+  // @media (max-width: 1023px) {
+  //   order: 2;
+  //   width: 328px;
+  //   padding-left: 0;
+  // }
+
+  @media (max-width: 767px) {
+    order: 2;
+    width: 100%;
+  }
+}
+
+.benefit__image-wrapper img {
+  display: block;
+  margin-top: -10px;
+
+  @media (max-width: 767px) {
+  margin-top: 0;
+  max-width: 298px;
+  }
+}
+
+.benefit__content {
+  display: flex;
+  flex-direction: column;
+  max-width: 765px;
+  align-self: flex-start;
+  width: 50%;
+
+  // @media (max-width: 1023px) {
+  //   max-width: unset;
+  //   order: 1;
+  // }
+
+  @media (max-width: 767px) {
+    max-width: unset;
+    order: 1;
+    width: 100%;
+  }
+}
+
+.benefit__title.title {
+  font-family: Gilroy;
+  line-height: 120%;
+  color: $color-black;
+  margin-bottom: 20px;
+  max-width: 717px;
+
+  @media (max-width: 767px) {
+    line-height: 120%;
+    margin-bottom: 18px;
+  }
+}
+
+.benefit__description {
+  margin: 0;
+  padding: 0;
+
+  font-size: 18px;
+  line-height: 150%;
+  font-weight: 400;
+  color: #181818;
+  // margin-bottom: 30px;
+
+  @media (max-width: 1023px) {
+    font-size: 18px;
+  }
+
+  @media (max-width: 767px) {
+    font-size: 14px;
+    // margin-bottom: 22px;
+  }
+}
+
+.benefit__description__list {
+  list-style-type: none;
+
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 auto;
+  gap: 32px;
+
+  @media (max-width: 767px) {
+    gap: 19px;
+  }
+}
+.benefit__description__list li {
+  position: relative;
+  padding-left: 90px;
+  max-width: 655px;
+
+  @media (max-width: 767px) {
+    padding-left: 46px;
+    max-width: 290px;
+  }
+}
+.benefit__description__list li:before {
+  position: absolute;
+  content: '';
+  top: 13px;
+  left: 0;
+  width: 67px;
+  height: 4px;
+  background-color: #012dd4;
+  border-radius: 15px;
+
+  @media (max-width: 767px) {
+    top: 13px;
+    width: 34px;
+  }
+}
+
+.benefit__description-text-bold {
+  font-family: Gilroy;
+  font-size: 22px;
+  line-height: 150%;
+  font-weight: 700;
+  color: #181818;
+  @media (max-width: 767px) {
+    font-size: 18px;
+  }
+}

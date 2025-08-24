@@ -1,0 +1,45 @@
+.button {
+  font-family: 'Gilroy';
+  padding: 24px 50px 20px;
+  text-align: center;
+  border: none;
+  border-radius: 65px;
+  background-color: $color-starship;
+  font-size: 20px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: $color-black;
+  cursor: pointer;
+  will-change: transform;
+  transition: all 0.3s ease;
+
+  // @media (max-width: 767px) {
+  //   font-size: 18px;
+  //   padding: 17px 15px;
+  // }
+  @media (max-width: 767px) {
+    font-size: 16px;
+    padding: 17px 15px;
+  }
+}
+
+.button:hover,
+.button:active {
+  color: $color-white;
+  background-color: $color-persian-blue;
+  transform: scale(1.05);
+  // box-shadow:
+  //       0 0 10px #012DD4,
+  //       0 0 20px #012DD4,
+  //       0 0 40px rgba(1, 45, 212, 0.5),
+  //       0 0 60px rgba(1, 45, 212, 0.3);
+  // box-shadow: 0 0 30px rgba(1, 45, 212, 0.8);
+  box-shadow:
+    0 0 0 2px rgba(1, 45, 212, 0.3),
+    0 0 0 4px rgba(1, 45, 212, 0.2),
+    0 0 0 6px rgba(1, 45, 212, 0.1);
+}
+
+.button--expanded {
+  width: 100%;
+}

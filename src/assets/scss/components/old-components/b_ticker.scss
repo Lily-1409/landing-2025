@@ -1,0 +1,39 @@
+.b_ticker {
+  height: 91px;
+  padding-top: 20px;
+  align-items: center;
+  background-color: $color-starship;
+  overflow: hidden;
+  display: flex;
+
+  @media (max-width: 767px) {
+    padding-top: 10px;
+    height: 38px;
+  }
+}
+
+.b_ticker__text {
+  padding: 0 16px;
+  font-size: 76px;
+  line-height: 120%;
+  line-height: 1;
+  font-weight: 700;
+  color: $color-black;
+  text-transform: uppercase;
+  white-space: nowrap;
+  animation: text 8s infinite linear;
+
+  @media (max-width: 767px) {
+    font-size: 24px;
+  }
+}
+
+@keyframes text {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(-100%);
+  }
+}

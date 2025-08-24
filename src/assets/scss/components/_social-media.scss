@@ -1,0 +1,24 @@
+.social-media {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+
+    display: flex;
+    gap: 24px;
+}
+
+.social-media__link {
+    text-decoration: none;
+    text-transform: uppercase;
+
+    // font-family: 'HelveticaNeueCyr', Helvetica, sans-serif;
+    font-size: 16px;
+    line-height: 150%;
+    font-weight: 700;
+    color: $color-black;
+}
+
+.social-media__link:hover,
+.social-media__link:active {
+  opacity: 0.5;
+}

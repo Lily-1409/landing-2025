@@ -1,0 +1,29 @@
+.example-h1 {
+  margin: 0 0 3rem;
+}
+
+.example-block {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-bottom: 3rem;
+}
+
+.example-block__title {
+  font-weight: 500;
+}
+
+.example-block__row {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+.example-block--images .example-block__row {
+  max-width: 100px;
+}
+
+.example-form {
+  width: 100%;
+  max-width: 315px;
+}

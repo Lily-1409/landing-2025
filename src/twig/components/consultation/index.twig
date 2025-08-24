@@ -1,0 +1,61 @@
+<section class="consultation" id="consultation">
+	<div class="container">
+		<div class="consultation__wrapper">
+			<div class="consultation__content">
+				<h2 class="consultation__title title">Заказать консультацию</h2>
+				<p class="consultation__description">Остались вопросы или есть задача по&nbsp;автоматизации бизнес-процессов, но&nbsp;пока нет понимания, как можно реализовать проект? Оставьте ваши контакты и&nbsp;наш специалист свяжется с&nbsp;вами в&nbsp;течение рабочего дня.</p>
+			</div>
+			<div class="consultation__form-wrapper">
+				<form class="consultation__form" id="consultation-form" novalidate>
+					<div class="consultation__form-field">
+						<div class="form-group">
+							<input
+								class="consultation__input form-control"
+								type="text"
+								name="name"
+								placeholder="Имя"
+								required
+								data-pristine-required-message="Пожалуйста, введите свое имя"
+							>
+						</div>
+						<div class="form-group">
+							<input
+								class="consultation__input form-control"
+								type="text"
+								name="company"
+								placeholder="Компания"
+								required
+								data-pristine-required-message="Пожалуйста, введите название Вашей компании"
+							>
+						</div>
+						<div class="form-group">
+							<input
+								class="consultation__input form-control"
+								type="tel"
+								name="phone"
+								placeholder="Телефон"
+								data-pristine-pattern="/^([0-9]|\+|\-|\(|\)|\s)*$/"
+								required
+								data-pristine-required-message="Пожалуйста, введите свой номер телефона"
+								data-pristine-pattern-message="Неверный формат номера телефона"
+							>
+						</div>
+						<div class="form-group">
+							<input
+								class="consultation__input form-control"
+								type="email"
+								name="email"
+								placeholder="E-mail"
+								required
+								data-pristine-required-message="Пожалуйста, введите свой адрес электронной почты"
+								data-pristine-email-message="Адрес электронной почты вводится в формате example@example.xxx"
+							>
+						</div>
+						<button class="consultation__submit button" type="submit">Заказать консультацию</button>
+					</div>
+					<div class="consultation__send-result"></div>
+				</form>
+			</div>
+		</div>
+	</div>
+</section>

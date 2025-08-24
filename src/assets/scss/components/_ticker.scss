@@ -1,0 +1,125 @@
+.ticker {
+  height: 332px;
+  padding: 50px 0 70px;
+  background-color: #012dd4;
+  overflow: hidden;
+  display: flex;
+  align-items: center; 
+  /* Добавляем оптимизацию для контейнера */
+  transform: translateZ(0);
+  backface-visibility: hidden;
+
+  @media (max-width: 767px) {
+    // padding-top: 10px;`
+    height: 178px;
+  }
+}
+
+.ticker__wrapper {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  display: flex;
+  gap: 110px;
+  //
+  // white-space: nowrap;
+  /* Отключаем выделение текста для улучшения производительности */
+  user-select: none;
+  /* Улучшаем рендеринг для анимации */
+  transform: translateZ(0);
+  backface-visibility: hidden;
+  perspective: 1000px;
+  will-change: transform;
+
+  /* Анимация */
+  animation: ticker-scroll 15s infinite linear;/* Увеличиваем время для плавности */
+
+}
+
+.ticker__item {
+  //
+  flex-shrink: 0;
+  width: 420px;
+  max-width: 420px; /* Дублируем для надежности */
+  min-width: 420px;
+  /* Улучшаем производительность анимации */
+  will-change: transform;
+  transform: translateZ(0);
+
+  transition: none !important;
+
+  @media (max-width: 767px) {
+    // font-size: 24px;
+  }
+}
+
+@keyframes ticker-scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(calc(-50% - 55px)); /* Учитываем gap и псевдоэлемент */
+  }
+}
+
+/* Пауза при наведении */
+.ticker:hover .ticker__wrapper {
+  animation-play-state: paused;
+}
+
+.statistics-indicators {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  align-items: center;
+  text-align: center;
+  height: 100%;
+  width: 100%;
+
+  /* Добавляем оптимизацию */
+  transform: translateZ(0);
+}
+
+.statistics-indicators::after {
+  position: absolute;
+  content: '';
+  top: 0;
+  right: -55px;
+  height: 192px;
+  width: 1px;
+  background-color: #8788bc;
+}
+
+.statistics-indicators__number {
+  font-family: Gilroy;
+  font-size: 66px;
+  line-height: 120%;
+  font-weight: 700;
+  color: #ffffff;
+  margin-bottom: 10px;
+
+   /* Фиксируем размеры для стабильности */
+  width: 100%;
+
+  @media (max-width: 767px) {
+    font-size: 32px;
+  }
+}
+
+.statistics-indicators__text {
+  font-family: Gilroy;
+  font-size: 18px;
+  line-height: 150%;
+  font-weight: 400;
+  color: #ffffff;
+  text-align: center;
+
+  // 
+  white-space: normal;
+  word-wrap: break-word;
+  width: 100%;
+
+  @media (max-width: 767px) {
+    font-size: 14px;
+  }
+}

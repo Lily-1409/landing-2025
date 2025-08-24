@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<!--[if IE 8 ]><html prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# business: http://ogp.me/ns/business#"  dir="ltr" lang="ru" class="ie8"><![endif]-->
+<!--[if IE 9 ]><html prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# business: http://ogp.me/ns/business#"  dir="ltr" lang="ru" class="ie9"><![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!-->
+<html prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# business: http://ogp.me/ns/business#" dir="ltr" lang="ru"> <head>
+	{% block head %}
+		<title>{{ meta is defined and meta.title is defined ? meta.title : 'Strikt Html Starter TWIG' }}</title>
+
+		{% include '../includes/meta.twig' with {
+			description: meta is defined and meta.title is defined ? meta.title : null,
+			keywords: meta is defined and meta.keywords is defined ? meta.keywords : null,
+			ogTitle: meta is defined and meta.ogTitle is defined ? meta.ogTitle : null,
+			ogDescription: meta is defined and meta.ogDescription is defined ? meta.ogDescription : null,
+			ogImage: meta is defined and meta.ogImage is defined ? meta.ogImage : null, 
+			ogImageWidth: meta is defined and meta.ogImageWidth is defined ? meta.ogImageWidth : null,
+			ogImageHeight: meta is defined and meta.ogImageHeight is defined ? meta.ogImageHeight : null
+		}%}
+
+		{% include '../includes/favicons.twig' %}
+	{% endblock %}
+	{% block styles %}{% endblock %}
+	{% include '../includes/metriks.twig' %}
+	
+</head>
+<body>
+	{% include '../components/header/index.twig' %}
+	{% include '../components/menu/index.twig' %}
+	<main class="content"> {% block content %}{% endblock %}
+		</main>
+		{% include '../components/footer/index.twig' %}
+		{% block scripts %}{% endblock %}
+	</body>
+</html>
