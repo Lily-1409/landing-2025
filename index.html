@@ -1,0 +1,1183 @@
+<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<!--[if IE 8 ]><html prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# business: http://ogp.me/ns/business#"  dir="ltr" lang="ru" class="ie8"><![endif]-->
+<!--[if IE 9 ]><html prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# business: http://ogp.me/ns/business#"  dir="ltr" lang="ru" class="ie9"><![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!-->
+<html prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# business: http://ogp.me/ns/business#" dir="ltr" lang="ru"> <head>
+			<title>Strikt — Разработка стартапов на основе LLM, автоматизация бизнес-процессов с помощью GPT</title>
+
+		
+<meta charset="utf-8"/>
+<meta name="format-detection" content="telephone=no"/>
+<meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+<meta name="description" content="Strikt — Разработка стартапов на основе LLM, автоматизация бизнес-процессов с помощью GPT">
+<meta name="keywords" content="strikt, атовматизация, искусственный интеллект, llm, gpt">
+<link rel="alternate" href="https://gitlab.com/Nikanorov/strikt-frontend-starter" hreflang="ru-ru"/>
+
+
+
+
+
+
+
+<meta property="og:title" content="Strikt — разработка стартапов с искуственным интеллектом">
+<meta property="og:description" content="Автоматизация бизнес-процессов с помощью GPT и LLM">
+
+
+
+
+
+
+<meta property="og:image" content="assets/images/logotype-openGraph.png">
+<meta property="og:image:secure_url" content="assets/images/logotype-openGraph.png">
+<meta property="og:image:width" content="195">
+<meta property="og:image:height" content="170">
+
+
+
+		<meta
+name="viewport" content="width=device-width, initial-scale=1">
+<!-- Favicons -->
+<link rel="shortcut icon" href="./assets/favicons/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="./assets/favicons/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="./assets/favicons/favicon-32x32.png">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="theme-color" content="#fff">
+<meta name="application-name" content="My App">
+<link rel="apple-touch-icon" sizes="57x57" href="./assets/favicons/apple-touch-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="./assets/favicons/apple-touch-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="./assets/favicons/apple-touch-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="./assets/favicons/apple-touch-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="./assets/favicons/apple-touch-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="./assets/favicons/apple-touch-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="./assets/favicons/apple-touch-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="./assets/favicons/apple-touch-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="167x167" href="./assets/favicons/apple-touch-icon-167x167.png">
+<link rel="apple-touch-icon" sizes="180x180" href="./assets/favicons/apple-touch-icon-180x180.png">
+<link rel="apple-touch-icon" sizes="1024x1024" href="./assets/favicons/apple-touch-icon-1024x1024.png">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="My App">
+<link rel="apple-touch-startup-image" media="(device-width: 320px) and (device-height: 480px) and (-webkit-device-pixel-ratio: 1)" href="./assets/favicons/apple-touch-startup-image-320x460.png">
+<link rel="apple-touch-startup-image" media="(device-width: 320px) and (device-height: 480px) and (-webkit-device-pixel-ratio: 2)" href="./assets/favicons/apple-touch-startup-image-640x920.png">
+<link rel="apple-touch-startup-image" media="(device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2)" href="./assets/favicons/apple-touch-startup-image-640x1096.png">
+<link rel="apple-touch-startup-image" media="(device-width: 375px) and (device-height: 667px) and (-webkit-device-pixel-ratio: 2)" href="./assets/favicons/apple-touch-startup-image-750x1294.png">
+<link rel="apple-touch-startup-image" media="(device-width: 414px) and (device-height: 736px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 3)" href="./assets/favicons/apple-touch-startup-image-1182x2208.png">
+<link rel="apple-touch-startup-image" media="(device-width: 414px) and (device-height: 736px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 3)" href="./assets/favicons/apple-touch-startup-image-1242x2148.png">
+<link rel="apple-touch-startup-image" media="(device-width: 768px) and (device-height: 1024px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 1)" href="./assets/favicons/apple-touch-startup-image-748x1024.png">
+<link rel="apple-touch-startup-image" media="(device-width: 768px) and (device-height: 1024px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 1)" href="./assets/favicons/apple-touch-startup-image-768x1004.png">
+<link rel="apple-touch-startup-image" media="(device-width: 768px) and (device-height: 1024px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 2)" href="./assets/favicons/apple-touch-startup-image-1496x2048.png">
+<link rel="apple-touch-startup-image" media="(device-width: 768px) and (device-height: 1024px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 2)" href="./assets/favicons/apple-touch-startup-image-1536x2008.png">
+<link rel="icon" type="image/png" sizes="228x228" href="./assets/favicons/coast-228x228.png">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="./assets/favicons/mstile-144x144.png">
+<meta name="msapplication-config" content="./assets/favicons/browserconfig.xml">
+<link
+rel="yandex-tableau-widget" href="./assets/favicons/yandex-browser-manifest.json">
+<!-- End Favicons -->
+			<link href="./assets/css/index.min.css" rel="stylesheet">
+	<!-- Yandex.Metrika counter -->
+<script type="text/javascript" >
+   (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+   m[i].l=1*new Date();
+   for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
+   k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+   (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+   ym(98000171, "init", {
+        clickmap:true,
+        trackLinks:true,
+        accurateTrackBounce:true
+   });
+</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/98000171" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!-- /Yandex.Metrika counter -->	
+</head>
+<body>
+	<div class="header-back">
+	<div class="container header-back__container">
+		<a class="header-back__logo" href="#">
+			<svg class="header-back__icon" width="120" height="96" viewbox="0 0 120 96">
+				<use xlink:href="/assets/images/icons.svg#logotype"></use>
+			</svg>
+		</a>
+	</div>
+</div>
+<div class="header-front">
+	<div class="container header-front__container">
+		<div class="header-front__content">
+			<button class="header-front__phone js-header-phone">
+				<svg width="64" height="64" viewbox="0 0 64 64" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve">
+					<use xlink:href="/assets/images/icons.svg#phone-icon"></use>
+				</svg>
+			</button>
+			<button class="header-front__menu-button js-header-menu-button">
+				<div class="header-front__burger">
+					<span></span>
+					<span></span>
+					<span></span>
+				</div>
+			</button>
+		</div>
+	</div>
+</div>
+	<div class="menu-overlay js-menu-overlay"></div>
+<div class="menu">
+	<div class="menu__content">
+		<a class="menu__logo" href="#">
+			<svg width="120" height="96" viewbox="0 0 120 96">
+				<use xlink:href="/assets/images/icons.svg#logotype"></use>
+			</svg>
+		</a>
+		<div class="menu__inner">
+			<nav class="menu-nav">
+				<ul class="menu-nav__list">
+					<li class="menu-nav__item">
+						<a class="menu-nav__link" href="#ai-solution">
+							AI-решения
+						</a>
+					</li>
+					<li class="menu-nav__item">
+						<a class="menu-nav__link" href="#advantages">
+							Преимущества
+						</a>
+					</li>
+					<li class="menu-nav__item">
+						<a class="menu-nav__link" href="#how-work">
+							Как мы работаем?
+						</a>
+					</li>
+					<li class="menu-nav__item">
+						<a class="menu-nav__link" href="#projects">
+							Наши проекты
+						</a>
+					</li>
+					<li class="menu-nav__item">
+						<a class="menu-nav__link" href="#why">
+							Почему мы?
+						</a>
+					</li>
+				</ul>
+			</nav>
+			<div class="menu-footer">
+				<ul class="menu-footer__list">
+					<li class="menu-footer__item">
+						<a class="menu-footer__link" href="https://t.me/strikt_ai" target="_blank">Telegram</a>
+					</li>
+					<li class="menu-footer__item">
+						<a class="menu-footer__link" href="tel:+79936287384">+7 993 628-73-84</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</div>
+	<main class="content"> 	<section class="intro">
+	<div class="container">
+		<div class="intro__wrapper">
+			<div class="intro__content">
+				<h1 class="intro__title title">
+					Искусственный интеллект для PR: автоматизация, контент, аналитика
+				</h1>
+				<p class="intro__caption">
+					Получайте глубокие инсайты, экономьте время — всё с помощью AI
+				</p>
+				<a class="intro__link button" href="#consultation">Заказать консультацию</a>
+			</div>
+			<div class="intro__image-wrapper">
+				<div class="intro__parallax">
+					<div data-speed="0" data-directiony="-1" data-directionx="-1" data-coords="coordsXY" class="intro__layer intro__layer--a"></div>
+					<div data-speed="0.1" data-directionx="-1" data-coords="coordX" class="intro__layer intro__layer--b"></div>
+					<div data-speed="0.1" data-directionx="1" data-coords="coordX" class="intro__layer intro__layer--c"></div>
+					<div data-speed="0.3" data-directionx="-1" data-directiony="1" data-coords="coordsXY" class="intro__layer intro__layer--d"></div>
+					<div data-speed="0.3" data-directionx="1" data-directiony="1" data-coords="coordsXY" class="intro__layer intro__layer--e"></div>
+					<div data-speed="0.2" data-directionx="1" data-directiony="-1" data-coords="coordsXY" class="intro__layer intro__layer--f"></div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+	<section class="strategy" id="process">
+	<div class="container">
+		<h2 class="strategy__title title">Контента всё больше, а&nbsp;времени на&nbsp;его создание&nbsp;&mdash; меньше?</h2>
+		<div class="strategy__inner">
+			<div class="strategy__image-wrapper">
+				<img class="strategy__image strategy__image--active" src="/assets/images/strategy-1.png" width="710" height="710"/>
+				<img class="strategy__image" src="/assets/images/strategy-2.png" width="518" height="671"/>
+				<img class="strategy__image" src="/assets/images/strategy-3.png" width="706" height="539"/>
+			</div>
+			<div class="strategy__content">
+				<h3 class="strategy__content-title">AI-инструменты помогут справиться с рутиной и усилить вовлечённость.</h3>
+				<ul class="strategy__list js-tabs">
+					<li class="strategy__item">
+						<div class="strategy-card strategy-card--active js-tabs-card js-button-accordion">
+							<div class="loading-bar">
+								<div class="loading-progress"></div>
+							</div>
+							<h4 class="strategy-card__title">Генерация контента</h4>
+							<div class="strategy-card__inner">
+								<div class="strategy-card__content">
+									<div class="strategy-card__description">
+										<span>60–75% экономии времени и бюджета</span>
+										<span>Создание пресс-релизов, постов и визуалов в 5 раз быстрее — без потери качества и с сохранением тональности бренда.</span>
+									</div>
+									<div class="strategy-card__image">
+										<img class="" src="/assets/images/strategy-1.png" width="215" height="242"/>
+									</div>
+								</div>
+							</div>
+							<div class="strategy-card__arrow">
+								<svg width="16" height="16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+									<path d="M9 1a1 1 0 0 0-2 0h2zM7.293 15.707a1 1 0 0 0 1.414 0l6.364-6.364a1 1 0 0 0-1.414-1.414L8 13.586 2.343 7.929A1 1 0 0 0 .93 9.343l6.364 6.364zM8 1H7v14h2V1H8z" fill="currentColor"/>
+								</svg>
+							</div>
+						</div>
+					</li>
+					<li class="strategy__item">
+						<div class="strategy-card js-tabs-card js-button-accordion">
+							<div class="loading-bar">
+								<div class="loading-progress"></div>
+							</div>
+							<h4 class="strategy-card__title">Персонализация и вовлечение</h4>
+							<div class="strategy-card__inner">
+								<div class="strategy-card__content">
+									<div class="strategy-card__description">
+										<span>+30–62% роста вовлечённости аудитории</span>
+										<span>Коммуникации подстраиваются под стиль, поведение и эмоции вашей целевой аудитории в реальном времени.</span>
+									</div>
+									<div class="strategy-card__image">
+										<img class="" src="/assets/images/strategy-2.png" width="215" height="242"/>
+									</div>
+								</div>
+							</div>
+							<div class="strategy-card__arrow">
+								<svg width="16" height="16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+									<path d="M9 1a1 1 0 0 0-2 0h2zM7.293 15.707a1 1 0 0 0 1.414 0l6.364-6.364a1 1 0 0 0-1.414-1.414L8 13.586 2.343 7.929A1 1 0 0 0 .93 9.343l6.364 6.364zM8 1H7v14h2V1H8z" fill="currentColor"/>
+								</svg>
+							</div>
+						</div>
+					</li>
+					<li class="strategy__item">
+						<div class="strategy-card js-tabs-card js-button-accordion">
+            <div class="loading-bar">
+								<div class="loading-progress"></div>
+							</div>
+							<h4 class="strategy-card__title">Кризис-менеджмент и репутация</h4>
+							<div class="strategy-card__inner">
+								<div class="strategy-card__content">
+									<div class="strategy-card__description">
+										<span>85% быстрее реагируйте на репутационные угрозы</span>
+										<span>Сценарии реагирования, генерация заявлений, предиктивная аналитика и командные центры кризисов — всё в режиме «сейчас».</span>
+									</div>
+									<div class="strategy-card__image">
+										<img class="" src="/assets/images/strategy-3.png" width="215" height="242"/>
+									</div>
+								</div>
+							</div>
+							<div class="strategy-card__arrow">
+								<svg width="16" height="16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+									<path d="M9 1a1 1 0 0 0-2 0h2zM7.293 15.707a1 1 0 0 0 1.414 0l6.364-6.364a1 1 0 0 0-1.414-1.414L8 13.586 2.343 7.929A1 1 0 0 0 .93 9.343l6.364 6.364zM8 1H7v14h2V1H8z" fill="currentColor"/>
+								</svg>
+							</div>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</section>
+	<section class="ai-solution-section" id="ai-solution">
+	<div class="container">
+		<h2 class="ai-solution-section__title title">Спектр AI-решений для PR</h2>
+		<ul class="ai-solution-section__list">
+			<li class="ai-solution-section__item">
+				<div class="ai-solution">
+					<div class="ai-solution-front">
+						<div class="ai-solution-front__image-wrapper">
+							<img class="ai-solution-front__image" src="/assets/images/ai-solution-icon-1.svg" width="52" height="70" alt=""/>
+						</div>
+						<h3 class="ai-solution-front__title">Стратегия и планирование</h3>
+					</div>
+					<div class="ai-solution-back">
+						<div class="ai-solution-back__content">
+							<div class="ai-solution-back__image-wrapper">
+								<img class="ai-solution-back__image" src="/assets/images/ai-solution-icon-1.svg" width="52" height="70" alt=""/>
+							</div>
+							<h3 class="ai-solution-back__title">Стратегия и планирование</h3>
+							<ul class="ai-solution-back__list">
+								<li class="ai-solution-back__item">Моделирование эффективности PR-кампаний</li>
+								<li class="ai-solution-back__item">AI-оптимизация контент-планов и&nbsp;бюджетов</li>
+								<li class="ai-solution-back__item">Сценарное планирование антикризисных действий</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</li>
+			<li class="ai-solution-section__item">
+				<div class="ai-solution">
+					<div class="ai-solution-front">
+						<div class="ai-solution-front__image-wrapper">
+							<img class="ai-solution-front__image" src="/assets/images/ai-solution-icon-2.svg" width="70" height="70" alt=""/>
+						</div>
+						<h3 class="ai-solution-front__title">Медиамониторинг и аналитика</h3>
+					</div>
+					<div class="ai-solution-back">
+						<div class="ai-solution-back__content">
+							<div class="ai-solution-back__image-wrapper">
+								<img class="ai-solution-back__image" src="/assets/images/ai-solution-icon-2.svg" width="52" height="52" alt=""/>
+							</div>
+							<h3 class="ai-solution-back__title">Медиамониторинг и аналитика</h3>
+							<ul class="ai-solution-back__list">
+								<li class="ai-solution-back__item">Аналитика трендов и&nbsp;репутационных рисков</li>
+								<li class="ai-solution-back__item">Выявление тональности, охвата и&nbsp;влияния медиаупоминаний</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</li>
+			<li class="ai-solution-section__item">
+				<div class="ai-solution">
+					<div class="ai-solution-front">
+						<div class="ai-solution-front__image-wrapper">
+							<img class="ai-solution-front__image" src="/assets/images/ai-solution-icon-3.svg" width="62" height="60" alt=""/>
+						</div>
+						<h3 class="ai-solution-front__title">Работа с инфлюенсерами и СМИ</h3>
+					</div>
+					<div class="ai-solution-back">
+						<div class="ai-solution-back__content">
+							<div class="ai-solution-back__image-wrapper">
+								<img class="ai-solution-back__image" src="/assets/images/ai-solution-icon-3.svg" width="55" height="52" alt=""/>
+							</div>
+							<h3 class="ai-solution-back__title">Работа с инфлюенсерами и СМИ</h3>
+							<ul class="ai-solution-back__list">
+								<li class="ai-solution-back__item">Поиск и&nbsp;анализ релевантных инфлюенсеров на&nbsp;основе метрик</li>
+								<li class="ai-solution-back__item">Персонализация медиа-питчей с&nbsp;учётом интересов журналистов</li>
+								<li class="ai-solution-back__item">Ведение CRM и&nbsp;профилей редакторов в&nbsp;автоматизированном режиме</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</li>
+			<li class="ai-solution-section__item">
+				<div class="ai-solution">
+					<div class="ai-solution-front">
+						<div class="ai-solution-front__image-wrapper">
+							<img class="ai-solution-front__image" src="/assets/images/ai-solution-icon-4.svg" width="76" height="69" alt=""/>
+						</div>
+						<h3 class="ai-solution-front__title">Новые технологии в PR</h3>
+					</div>
+					<div class="ai-solution-back">
+						<div class="ai-solution-back__content">
+							<div class="ai-solution-back__image-wrapper">
+								<img class="ai-solution-back__image" src="/assets/images/ai-solution-icon-4.svg" width="59" height="53" alt=""/>
+							</div>
+							<h3 class="ai-solution-back__title">Новые технологии в PR</h3>
+							<ul class="ai-solution-back__list">
+								<li class="ai-solution-back__item">Голосовые интерфейсы и&nbsp;spatial computing для виртуальных мероприятий</li>
+								<li class="ai-solution-back__item">Генеративное видео и&nbsp;AR-форматы в&nbsp;презентациях</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</li>
+			<li class="ai-solution-section__item">
+				<div class="ai-solution">
+					<div class="ai-solution-front">
+						<div class="ai-solution-front__image-wrapper">
+							<img class="ai-solution-front__image" src="/assets/images/ai-solution-icon-5.svg" width="63" height="71" alt=""/>
+						</div>
+						<h3 class="ai-solution-front__title">Измерение и эффективность</h3>
+					</div>
+					<div class="ai-solution-back">
+						<div class="ai-solution-back__content">
+							<div class="ai-solution-back__image-wrapper">
+								<img class="ai-solution-back__image" src="/assets/images/ai-solution-icon-5.svg" width="46" height="52" alt=""/>
+							</div>
+							<h3 class="ai-solution-back__title">Измерение и эффективность</h3>
+							<ul class="ai-solution-back__list">
+								<li class="ai-solution-back__item">Построение дашбордов и&nbsp;автоматизированных отчетов</li>
+								<li class="ai-solution-back__item">Прогнозирование охватов, вовлеченности и&nbsp;отклика</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</li>
+			<li class="ai-solution-section__item">
+				<div class="ai-solution ai-solution--more">
+					<div class="ai-solution-front">
+						<a class="ai-solution-front-button button" href="#consultation">Узнать подробнее</a>
+						<div class="ai-solution__parallax">
+							<div data-speed="0.2" data-directiony="-1" data-directionx="-1" data-coords="coordsXY" class="ai-solution__layer ai-solution__layer--a"></div>
+							<div data-speed="0.5" data-directionx="-1" data-directiony="1" data-coords="coordsXY" class="ai-solution__layer ai-solution__layer--b"></div>
+							<div data-speed="0.36" data-directionx="-1" data-coords="coordX" class="ai-solution__layer ai-solution__layer--c"></div>
+							<div data-speed="0.6" data-directionx="1" data-directiony="1" data-coords="coordsXY" class="ai-solution__layer ai-solution__layer--d"></div>
+							<div data-speed="0.6" data-directionx="1" data-directiony="1" data-coords="coordsXY" class="ai-solution__layer ai-solution__layer--e"></div>
+						</div>
+					</div>
+				</div>
+				<button type="button" class="ai-solution__button button">Узнать подробнее</button>
+			</li>
+		</ul>
+	</div>
+</section>
+	<div class="ticker">
+	<ul class="ticker__wrapper">
+		<li class="ticker__item statistics-indicators">
+			<div class="statistics-indicators__number">30%</div>
+			<div class="statistics-indicators__text">Ускорь реакцию до&nbsp;30% при обнаружении репутационного кризиса с&nbsp;AI-мониторингомв реальном времени</div>
+		</li>
+		<li class="ticker__item statistics-indicators">
+			<div class="statistics-indicators__number">45%</div>
+			<div class="statistics-indicators__text">На&nbsp;45% меньше затрат на&nbsp;контент-отдел при генерации пресс-релизов и&nbsp;постов с&nbsp;помощью&nbsp;AI</div>
+		</li>
+		<li class="ticker__item statistics-indicators">
+			<div class="statistics-indicators__number">20%</div>
+			<div class="statistics-indicators__text">Сократи расходы на&nbsp;аналитику до&nbsp;20% благодаря автоматизированной медиасводкеи отчётам</div>
+		</li>
+		<li class="ticker__item statistics-indicators">
+			<div class="statistics-indicators__number">30%</div>
+			<div class="statistics-indicators__text">Повышай охват публикаций до&nbsp;30% за&nbsp;счёт адаптации контента под&nbsp;ЦА с&nbsp;помощью&nbsp;AI</div>
+		</li>
+		<li class="ticker__item statistics-indicators">
+			<div class="statistics-indicators__number">40%</div>
+			<div class="statistics-indicators__text">На&nbsp;40% точнее выбирай инфлюенсеров с&nbsp;AI-оценкой релевантности, охвата и&nbsp;тональности</div>
+		</li>
+		<li class="ticker__item statistics-indicators">
+			<div class="statistics-indicators__number">50%</div>
+			<div class="statistics-indicators__text">Сократи до&nbsp;50% времени на&nbsp;создание медиа-брифов и&nbsp;аннотаций с&nbsp;AI-резюмированием</div>
+		</li>
+		<li class="ticker__item statistics-indicators">
+			<div class="statistics-indicators__number">30%</div>
+			<div class="statistics-indicators__text">Ускорь реакцию до&nbsp;30% при обнаружении репутационного кризиса с&nbsp;AI-мониторингомв реальном времени</div>
+		</li>
+		<li class="ticker__item statistics-indicators">
+			<div class="statistics-indicators__number">45%</div>
+			<div class="statistics-indicators__text">На&nbsp;45% меньше затрат на&nbsp;контент-отдел при генерации пресс-релизов и&nbsp;постов с&nbsp;помощью&nbsp;AI</div>
+		</li>
+		<li class="ticker__item statistics-indicators">
+			<div class="statistics-indicators__number">20%</div>
+			<div class="statistics-indicators__text">Сократи расходы на&nbsp;аналитику до&nbsp;20% благодаря автоматизированной медиасводкеи отчётам</div>
+		</li>
+		<li class="ticker__item statistics-indicators">
+			<div class="statistics-indicators__number">30%</div>
+			<div class="statistics-indicators__text">Повышай охват публикаций до&nbsp;30% за&nbsp;счёт адаптации контента под&nbsp;ЦА с&nbsp;помощью&nbsp;AI</div>
+		</li>
+		<li class="ticker__item statistics-indicators">
+			<div class="statistics-indicators__number">40%</div>
+			<div class="statistics-indicators__text">На&nbsp;40% точнее выбирай инфлюенсеров с&nbsp;AI-оценкой релевантности, охвата и&nbsp;тональности</div>
+		</li>
+		<li class="ticker__item statistics-indicators">
+			<div class="statistics-indicators__number">50%</div>
+			<div class="statistics-indicators__text">Сократи до&nbsp;50% времени на&nbsp;создание медиа-брифов и&nbsp;аннотаций с&nbsp;AI-резюмированием</div>
+		</li>
+	</ul>
+</div>
+	<section class="advantages" id="advantages">
+	<div class="container advantages__container">
+	 	<span class="advantages__wrapper-animation advantages__wrapper-animation--one"></span>
+		<span class="advantages__wrapper-animation advantages__wrapper-animation--two"></span>
+		<span class="advantages__wrapper-animation advantages__wrapper-animation--three"></span>
+		<div class="advantages__wrapper">
+			<h2 class="advantages__title title">
+				<div>Преимущества
+				</div>
+				внедрения AI в PR</h2>
+			<ul class="advantages-list">
+				<li class="advantages-item">
+					<div class="advantages-item__content">
+						<div class="advantages-item__image-wrapper">
+							<img class="advantages-item__image advantages-item__image--svg1" src="/assets/images/advantages-1-new.svg" width="76" height="76"/>
+						</div>
+						<h3 class="advantages-item__title">Автоматизация рутинных задач</h3>
+						<div class="advantages-item__description-wrapper">
+							<p class="advantages-item__description">Освобождает до 70% времени команды за счёт генерации контента, аналитики и мониторинга в режиме 24/7.</p>
+						</div>
+					</div>
+				</li>
+				<li class="advantages-item">
+					<div class="advantages-item__content">
+						<div class="advantages-item__image-wrapper">
+							<img class="advantages-item__image advantages-item__image--svg2" src="/assets/images/advantages-2-new.svg" width="76" height="76"/>
+						</div>
+						<h3 class="advantages-item__title">Персонализация коммуникаций</h3>
+						<div class="advantages-item__description-wrapper">
+							<p class="advantages-item__description">AI сегментирует аудитории и подбирает сообщения для каждого сегмента, увеличивая конверсию и отклик.</p>
+						</div>
+					</div>
+				</li>
+				<li class="advantages-item">
+					<div class="advantages-item__content">
+						<div class="advantages-item__image-wrapper">
+							<img class="advantages-item__image advantages-item__image--svg3" src="/assets/images/advantages-3-new.svg" width="79" height="70"/>
+						</div>
+						<h3 class="advantages-item__title">Рост эффективности и ROI</h3>
+						<div class="advantages-item__description-wrapper">
+							<p class="advantages-item__description">AI-аналитика позволяет принимать решения быстрее и точнее, обеспечивая рост отдачи от PR-кампаний.</p>
+						</div>
+					</div>
+				</li>
+				<li class="advantages-item">
+					<div class="advantages-item__content">
+						<div class="advantages-item__image-wrapper">
+							<img class="advantages-item__image advantages-item__image--svg4" src="/assets/images/advantages-4-new.svg" width="74" height="49"/>
+						</div>
+						<h3 class="advantages-item__title">Прозрачная отчётность и визуализация данных</h3>
+						<div class="advantages-item__description-wrapper">
+							<p class="advantages-item__description">Отчёты, метрики и дашборды формируются автоматически — всё ключевые показатели PR всегда под рукой.</p>
+						</div>
+					</div>
+				</li>
+				<li class="advantages-item">
+					<div class="advantages-item__content">
+						<div class="advantages-item__image-wrapper">
+							<img class="advantages-item__image advantages-item__image--svg5" src="/assets/images/advantages-5-new.svg" width="85" height="59"/>
+						</div>
+						<h3 class="advantages-item__title">Быстрый медиамониторинг и предотвращение кризисов</h3>
+						<div class="advantages-item__description-wrapper">
+							<p class="advantages-item__description">AI выявляет негативные упоминания и тренды в режиме реального времени, позволяя реагировать до возникновения репутационных рисков.</p>
+						</div>
+					</div>
+				</li>
+				<li class="advantages-item">
+					<div class="advantages-item__content">
+						<div class="advantages-item__image-wrapper">
+							<img class="advantages-item__image advantages-item__image--svg6" src="/assets/images/advantages-6-new.svg" width="55" height="71"/>
+						</div>
+						<h3 class="advantages-item__title">Высокий уровень безопасности и соответствие стандартам</h3>
+						<div class="advantages-item__description-wrapper">
+							<p class="advantages-item__description">Все решения соответствуют корпоративным и отраслевым требованиям по защите данных.</p>
+						</div>
+					</div>
+				</li>
+			</ul>
+		</div>
+	</div>
+</section>
+	<div class="common-wrapper">
+		<section class="how-work" id="how-work">
+	<div class="container">
+		<div class="how-work__wrapper">
+			<h2 class="how-work__title title">
+				Как мы работаем?
+			</h2>
+			<div class="how-work__inner">
+				<ul class="how-work__list">
+					<li class="how-work__item">
+						<div class="how-work__image-wrapper">
+							<img class="how-work__image how-work__image-bg how-work__image-color-bg lazyload" data-src="/assets/images/how-work-color-bg-left.svg" alt=""/>
+							<img class="how-work__image how-work__image-bg how-work__image-black-white-bg lazyload" data-src="/assets/images/how-work-bg-left.svg" alt=""/>
+							<picture>
+								<img class="how-work__image lazyload" data-src="/assets/images/how-work-image-1.png" width="676" height="458" alt=""/>
+							</picture>
+						<span class="how-work__progress-pin how-work__progress-pin--one"></span>
+						</div>
+						<div class="how-work__item-description">
+							<div class="how-work__item-step">шаг 1</div>
+							<h3 class="how-work__item-title">Анализ задач и проектирование</h3>
+							<p class="how-work__item-text">Интервью с PR-командой, определение целей, каналов, источников данных и сценариев автоматизации</p>
+						</div>
+					</li>
+					<li class="how-work__item how-work__item--reverse">
+						<div class="how-work__image-wrapper">
+							<img class="how-work__image how-work__image-bg how-work__image-color-bg lazyload" data-src="/assets/images/how-work-color-bg-right.svg" alt=""/>
+							<img class="how-work__image how-work__image-bg how-work__image-black-white-bg lazyload" data-src="/assets/images/how-work-bg-right.svg" alt=""/>
+							<picture>
+								<img class="how-work__image lazyload" data-src="/assets/images/how-work-image-2.png" width="652" height="493" alt=""/>
+							</picture>
+						<span class="how-work__progress-pin how-work__progress-pin--two"></span>
+						</div>
+						<div class="how-work__item-description">
+							<div class="how-work__item-step">шаг 2</div>
+							<h3 class="how-work__item-title">Прототипирование и тестирование</h3>
+							<p class="how-work__item-text">Быстрый запуск пилота на&nbsp;ваших данных, настройка под отраслевой язык, проверка функционала.</p>
+						</div>
+					</li>
+					<li class="how-work__item">
+						<div class="how-work__image-wrapper">
+							<img class="how-work__image how-work__image-bg how-work__image-color-bg lazyload" data-src="/assets/images/how-work-color-bg-left.svg" alt=""/>
+							<img class="how-work__image how-work__image-bg how-work__image-black-white-bg lazyload" data-src="/assets/images/how-work-bg-left.svg" alt=""/>
+							<picture>
+								<img class="how-work__image lazyload" data-src="/assets/images/how-work-image-3.png" width="676" height="458" alt=""/>
+							</picture>
+						<span class="how-work__progress-pin how-work__progress-pin--three"></span>
+						</div>
+						<div class="how-work__item-description">
+							<div class="how-work__item-step">шаг 3</div>
+							<h3 class="how-work__item-title">Внедрение и интеграция</h3>
+							<p class="how-work__item-text">Интеграция с&nbsp;PR-инфраструктурой, обеспечение безопасности, масштабирование под большие объемы.</p>
+						</div>
+					</li>
+					<li class="how-work__item how-work__item--reverse">
+						<div class="how-work__image-wrapper">
+							<img class="how-work__image how-work__image-bg how-work__image-color-bg lazyload" data-src="/assets/images/how-work-color-bg-right.svg" alt=""/>
+							<img class="how-work__image how-work__image-bg how-work__image-black-white-bg lazyload" data-src="/assets/images/how-work-bg-right.svg" alt=""/>
+							<picture>
+								<img class="how-work__image lazyload" data-src="/assets/images/how-work-image-4.png" width="652" height="493" alt=""/>
+							</picture>
+						<span class="how-work__progress-pin how-work__progress-pin--four"></span>
+						</div>
+						<div class="how-work__item-description">
+							<div class="how-work__item-step">шаг 4</div>
+							<h3 class="how-work__item-title">
+								Сопровождение и развитие</h3>
+							<p class="how-work__item-text">Мониторинг, анализ метрик, обновление моделей, настройка под новые задачи и&nbsp;консультационная поддержка.</p>
+						</div>
+					</li>
+				</ul>
+				<div class="how-work__loading-bar">
+					<div id="progress-bar" class="how-work__loading-progress"></div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+		<section class="projects" id="projects">
+	<div class="container">
+		<h2 class="projects__title title">Наши проекты</h2>
+		<div class="project-slider">
+			<div class="project-slider__wrapper">
+				<div class="project-slider__item">
+					<div class="project-slide">
+						<div class="project-slide__content">
+							<h3 class="project-slide__title">Решение мониторинга упоминания бренда в&nbsp;Интернет в&nbsp;режиме реального времени</h3>
+							<div class="project-slide__description">Задача: разработка системы автоматизированного мониторинга упоминаний брендов и выявления инфоповодов, тем и других сущностей из текста сообщений в социальных сетях.</div>
+							<button type="button" class="project-slide__button button">Подробнее</button>
+						</div>
+						<picture>
+							<source media="(max-width: 767px)" data-srcset="/assets/images/webp/project-slide-mobile-image-2.webp"/>
+							<source media="(max-width: 767px)" data-srcset="/assets/images/project-slide-mobile-image-2.png"/>
+							<source data-srcset="/assets/images/webp/project-slide-image-2.webp"/>
+							<img class="project-slide__image lazyload" data-src="/assets/images/project-slide-image-2.png" width="754" height="564" alt="">
+						</picture>
+					</div>
+				</div>
+				<div class="project-slider__item">
+					<div class="project-slide">
+						<div class="project-slide__content">
+							<h3 class="project-slide__title">Решение по&nbsp;автоматизации рекламы на&nbsp;Amazon</h3>
+							<p class="project-slide__description">Задача: разработать MVP-систему, которая позволит автоматизировать запуск рекламы на&nbsp;площадках Facebook, Google и&nbsp;Amazon.</p>
+							<button type="button" class="project-slide__button button">Подробнее</button>
+						</div>
+						<picture>
+							<source media="(max-width: 767px)" data-srcset="/assets/images/webp/project-slide-mobile-image-1.webp"/>
+							<source media="(max-width: 767px)" data-srcset="/assets/images/project-slide-mobile-image-1.png"/>
+							<source data-srcset="/assets/images/webp/project-slide-image-1.webp"/>
+							<img class="project-slide__image lazyload" data-src="/assets/images/project-slide-image-1.png" width="754" height="564" alt="">
+						</picture>
+					</div>
+				</div>
+				<div class="project-slider__item">
+					<div class="project-slide">
+						<div class="project-slide__content">
+							<h3 class="project-slide__title">Решение для автоматизации работы бизнес-аналитика</h3>
+							<p class="project-slide__description">Задача: ускорить процесс описания требований для разработки&nbsp;ПО.</p>
+							<button type="button" class="project-slide__button button">Подробнее</button>
+						</div>
+						<picture>
+							<source media="(max-width: 767px)" data-srcset="/assets/images/webp/project-slide-mobile-image-3.webp"/>
+							<source media="(max-width: 767px)" data-srcset="/assets/images/project-slide-mobile-image-3.png"/>
+							<source data-srcset="/assets/images/webp/project-slide-image-3.webp"/>
+							<img class="project-slide__image lazyload" data-src="/assets/images/project-slide-image-3.png" width="754" height="564" alt="">
+						</picture>
+					</div>
+				</div>
+			</div>
+			<span class="project-slider__border"></span>
+			<span class="project-slider__border project-slider__border--blue"></span>
+			<div class="project-slider__counter">
+				<span class="project-slider__counter-big">01</span>
+				<span class="project-slider__counter-small">/3</span>
+			</div>
+		</div>
+	</div>
+</section>
+	</div>
+	
+	<section class="why" id="why">
+	<div class="container">
+		<div class="why__wrapper">
+			<h2 class="why__title title">Почему мы?</h2>
+			<div class="why-slider">
+				<div class="why-slider__counter">
+					<span class="why-slider__counter-big">01</span>
+					<span class="why-slider__counter-small">/3</span>
+				</div>
+				<div class="why-slider__wrapper">
+					<div class="why-slider__item">
+						<div class="why-slide">
+							<div class="why-slide-front">
+								<div class="why-slide-front__image-wrapper">
+									<img class="why-slide-front__image" src="/assets/images/why-slide-new-icon-1.svg" width="130" height="92" alt=""/>
+								</div>
+								<h3 class="why-slide-front__title">Индивидуальная интеграция</h3>
+							</div>
+							<div class="why-slide-back">
+								<div class="why-slide-back__content">
+									<div class="why-slide-back__image-wrapper">
+										<img class="why-slide-back__image" src="/assets/images/why-slide-new-icon-1.svg" width="87" height="61" alt=""/>
+									</div>
+									<h3 class="why-slide-back__title">Индивидуальная интеграция</h3>
+									<p class="why-slide-back__description">Каждое решение адаптируется под вашу инфраструктуру, бизнес&nbsp;-&nbsp;процессы и&nbsp;стиль коммуникации</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="why-slider__item">
+						<div class="why-slide">
+							<div class="why-slide-front">
+								<div class="why-slide-front__image-wrapper">
+									<img class="why-slide-front__image" src="/assets/images/why-slide-new-icon-2.svg" width="192" height="64" alt=""/>
+								</div>
+								<h3 class="why-slide-front__title">Ориентир на&nbsp;результат</h3>
+							</div>
+							<div class="why-slide-back">
+								<div class="why-slide-back__content">
+									<div class="why-slide-back__image-wrapper">
+										<img class="why-slide-back__image" src="/assets/images/why-slide-new-icon-2.svg" width="128" height="42" alt=""/>
+									</div>
+									<h3 class="why-slide-back__title">Ориентир на&nbsp;результат</h3>
+									<p class="why-slide-back__description">Разработка разбита на короткие циклы, чтобы вы могли вносить изменения «на&nbsp;лету» и&nbsp;получать идеальный итоговый продукт.</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="why-slider__item">
+						<div class="why-slide">
+							<div class="why-slide-front">
+								<div class="why-slide-front__image-wrapper">
+									<img class="why-slide-front__image" src="/assets/images/why-slide-new-icon-3.svg" width="70" height="70" alt=""/>
+								</div>
+								<h3 class="why-slide-front__title">Быстрый запуск проекта</h3>
+							</div>
+							<div class="why-slide-back">
+								<div class="why-slide-back__content">
+									<div class="why-slide-back__image-wrapper">
+										<img class="why-slide-back__image" src="/assets/images/why-slide-new-icon-3.svg" width="70" height="70" alt=""/>
+									</div>
+									<h3 class="why-slide-back__title">Быстрый запуск проекта</h3>
+									<p class="why-slide-back__description">Доступ к&nbsp;промежуточным результатам и&nbsp;регулярная отчётность: всё под вашим контролем.</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="why-slider__item">
+						<div class="why-slide">
+							<div class="why-slide-front">
+								<div class="why-slide-front__image-wrapper">
+									<img class="why-slide-front__image" src="/assets/images/why-slide-new-icon-4.svg" width="61" height="79" alt=""/>
+								</div>
+								<h3 class="why-slide-front__title">Высокий уровень безопасности данных</h3>
+							</div>
+							<div class="why-slide-back">
+								<div class="why-slide-back__content">
+									<div class="why-slide-back__image-wrapper">
+										<img class="why-slide-back__image" src="/assets/images/why-slide-new-icon-4.svg" width="61" height="79" alt=""/>
+									</div>
+									<h3 class="why-slide-back__title">Высокий уровень безопасности данных</h3>
+									<p class="why-slide-back__description">Мы ценим ваше время и&nbsp;гарантируем результаты, прописывая дедлайны в&nbsp;договоре.</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+	<section class="benefit">
+	<div class="container">
+		<div class="benefit__wrapper">
+			<div class="benefit__image-wrapper">
+				<picture>
+					<source data-srcset="/assets/images/webp/benefit.webp"/>
+					<img class="lazyload" data-src="/assets/images/benefit.png" width="677" height="626" alt=""/>
+				</picture>
+			</div>
+			<div class="benefit__content">
+				<h1 class="benefit__title title">Мы&nbsp;будем вам полезны, если...</h1>
+				<ul class="benefit__description benefit__description__list">
+					<li>
+						<div class="benefit__description-text-bold">Вы&nbsp;знаете, какие процессы хотите автоматизировать</div>
+						и&nbsp;ищете экспертного партнёра для внедрения AI-решений.
+					</li>
+					<li>
+						<div class="benefit__description-text-bold">Вы&nbsp;тратите время на&nbsp;рутину в&nbsp;PR</div>
+						и&nbsp;хотите избавиться от&nbsp;ручной обработки отзывов и&nbsp;запросов.</li>
+					<li>
+						<div class="benefit__description-text-bold">Вы&nbsp;хотите внедрить современные инструменты</div>
+						аналитика, мониторинг, генерация контента&nbsp;&mdash; с&nbsp;поддержкой на&nbsp;всех этапах.</li>
+					<li>
+						<div class="benefit__description-text-bold">Вы&nbsp;готовы использовать&nbsp;ИИ для роста эффективности</div>
+						и&nbsp;усилить результативность и&nbsp;конкурентоспособность PR-отдела.</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</section>
+	<section class="consultation" id="consultation">
+	<div class="container">
+		<div class="consultation__wrapper">
+			<div class="consultation__content">
+				<h2 class="consultation__title title">Заказать консультацию</h2>
+				<p class="consultation__description">Остались вопросы или есть задача по&nbsp;автоматизации бизнес-процессов, но&nbsp;пока нет понимания, как можно реализовать проект? Оставьте ваши контакты и&nbsp;наш специалист свяжется с&nbsp;вами в&nbsp;течение рабочего дня.</p>
+			</div>
+			<div class="consultation__form-wrapper">
+				<form class="consultation__form" id="consultation-form" novalidate>
+					<div class="consultation__form-field">
+						<div class="form-group">
+							<input
+								class="consultation__input form-control"
+								type="text"
+								name="name"
+								placeholder="Имя"
+								required
+								data-pristine-required-message="Пожалуйста, введите свое имя"
+							>
+						</div>
+						<div class="form-group">
+							<input
+								class="consultation__input form-control"
+								type="text"
+								name="company"
+								placeholder="Компания"
+								required
+								data-pristine-required-message="Пожалуйста, введите название Вашей компании"
+							>
+						</div>
+						<div class="form-group">
+							<input
+								class="consultation__input form-control"
+								type="tel"
+								name="phone"
+								placeholder="Телефон"
+								data-pristine-pattern="/^([0-9]|\+|\-|\(|\)|\s)*$/"
+								required
+								data-pristine-required-message="Пожалуйста, введите свой номер телефона"
+								data-pristine-pattern-message="Неверный формат номера телефона"
+							>
+						</div>
+						<div class="form-group">
+							<input
+								class="consultation__input form-control"
+								type="email"
+								name="email"
+								placeholder="E-mail"
+								required
+								data-pristine-required-message="Пожалуйста, введите свой адрес электронной почты"
+								data-pristine-email-message="Адрес электронной почты вводится в формате example@example.xxx"
+							>
+						</div>
+						<button class="consultation__submit button" type="submit">Заказать консультацию</button>
+					</div>
+					<div class="consultation__send-result"></div>
+				</form>
+			</div>
+		</div>
+	</div>
+</section>
+	<div class="project-modal">
+	<div class="overlay-project-modal"></div>
+	<div class="project-modal__box">
+		<button type="button" class="project-modal__close-button"></button>
+		<div class="project-modal__wrapper">
+				<div class="project-modal__slider">
+					<div class="project-modal__slide">
+						<div class="project-modal-slide">
+							<div class="project-modal__content">
+								<h2 class="project-modal__title">Решение мониторинга упоминания бренда в&nbsp;Интернет в режиме реального времени</h2>
+								<div class="project-modal__text-wrapper">
+									<h3 class="project-modal__text-title">Задача:</h3>
+									<p class="project-modal__text-content">Разработка системы автоматизированного мониторинга упоминаний брендов и&nbsp;выявления инфоповодов, тем и&nbsp;других сущностей из&nbsp;текста сообщений в&nbsp;социальных сетях.</p>
+								</div>
+								<div class="project-modal__text-wrapper">
+									<h3 class="project-modal__text-title">Что было сделано:</h3>
+									<p class="project-modal__text-content">Главная сложность разработки подобной системы&nbsp;&mdash; настроить кластеризацию и&nbsp;поиск инфоповодов и&nbsp;тем в&nbsp;текстах в&nbsp;режиме реального времени с&nbsp;цельным пониманием содержания и&nbsp;определением тональности.</p>
+									<p class="project-modal__text-content">Мы&nbsp;создали систему, которая в&nbsp;режиме реального времени может: собирать, хранить и&nbsp;обрабатывать большие объемы данных; искать инфоповоды и&nbsp;темы в&nbsp;сообщениях; определять тональность текстов по&nbsp;отношению к&nbsp;объекту.</p>
+								</div>
+								<div class="project-modal__image-wrapper">
+									<picture class="project-modal__image project-modal__image--big">
+										<source data-srcset="/assets/images/webp/projects-modal-2-image-1.webp"/>
+										<img class="lazyload" data-src="/assets/images/projects-modal-2-image-1.png"  alt="">
+									</picture>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="project-modal__slide">
+						<div class="project-modal-slide">
+							<div class="project-modal__content">
+								<h2 class="project-modal__title">Решение по&nbsp;автоматизации рекламы на&nbsp;Amazon</h2>
+								<div class="project-modal__text-wrapper">
+									<h3 class="project-modal__text-title">Задача:</h3>
+									<p class="project-modal__text-content">Разработать MVP-систему, которая позволит автоматизировать запуск рекламы на&nbsp;площадках Facebook, Google и&nbsp;Amazon.</p>
+								</div>
+								<div class="project-modal__text-wrapper">
+									<a href="https://loqstoq.webflow.io/" target="_blank" class="project-modal__link button">Подробнее</a>
+								</div>
+								<div class="project-modal__text-wrapper">
+									<h3 class="project-modal__text-title">Что было сделано:</h3>
+									<p class="project-modal__text-content">Было реализовано решение на основе исходных параметров товаров, позволяющее LLM/GPT генерировать описания и креативы для рекламных кампаний и выбирать наиболее эффективные варианты. Также был добавлен модуль генерации текстов для рекламы в систему.</p>
+								</div>
+								<div class="project-modal__image-wrapper">
+									<picture class="project-modal__image project-modal__image--rounded">
+										<source data-srcset="/assets/images/webp/projects-modal-1-image-1.webp"/>
+										<img class="lazyload" data-src="/assets/images/projects-modal-1-image-1.jpg"  alt="">
+									</picture>
+									<picture class="project-modal__image project-modal__image--rounded">
+										<source data-srcset="/assets/images/webp/projects-modal-1-image-2.webp"/>
+										<img class="lazyload" data-src="/assets/images/projects-modal-1-image-2.jpg" alt="">
+									</picture>
+									<picture class="project-modal__image project-modal__image--rounded project-modal__image--big">
+										<source data-srcset="/assets/images/webp/projects-modal-1-image-3.webp"/>
+										<img class="lazyload" data-src="/assets/images/projects-modal-1-image-3.jpg" alt="">
+									</picture>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="project-modal__slide">
+						<div class="project-modal-slide">
+							<div class="project-modal__content">
+								<h2 class="project-modal__title">Решение для автоматизации работы бизнес-аналитика</h2>
+								<div class="project-modal__text-wrapper">
+									<h3 class="project-modal__text-title">Задача:</h3>
+									<p class="project-modal__text-content">Ускорить процесс описания требований для разработки&nbsp;ПО.</p>
+								</div>
+								<div class="project-modal__text-wrapper">
+									<a href="https://omori.ai/" target="_blank" class="project-modal__link button">Подробнее</a>
+								</div>
+								<div class="project-modal__text-wrapper">
+									<h3 class="project-modal__text-title">Что было сделано:</h3>
+									<p class="project-modal__text-content">Сложность данного проекта - научиться корректно формулировать промты, добиться постоянного качественного результата в работе системы.</p>
+									<p class="project-modal__text-content">Мы разработали решение по&nbsp;автоматизации процесса разработки требований от&nbsp;транскрибации интервью до&nbsp;создания документа software requirements. Научили заказчика правильно формулировать промты (составили список запросов под разные задачи) и&nbsp;добились постоянного качественно результата работы решения.</p>
+								</div>
+								<div class="project-modal__image-wrapper">
+									<picture class="project-modal__image project-modal__image--big">
+										<source data-srcset="/assets/images/webp/projects-modal-3-image-1.webp"/>
+										<img class="lazyload" data-src="/assets/images/projects-modal-3-image-1.png"  alt="">
+									</picture>
+								</div>
+							</div>
+						</div>
+					</div>
+
+				</div>
+
+				<div class="project-modal__buttons">
+					<button class="project-modal__button project-modal__button--prev button">Назад</button>
+					<button class="project-modal__button project-modal__button--next button">Далее</button>
+				</div>
+				<div class="project-modal__counter">
+					<span class="project-modal__counter-big">01</span>
+					<span class="project-modal__counter-small">/3</span>
+				</div>
+		</div>
+	</div>
+</div>
+	<div class="order-consultation-modal">
+	<div class="order-consultation-modal__overlay"></div>
+	<div class="order-consultation-modal__content">
+		<div class="order-consultation-modal__box">
+			<div class="order-consultation-modal__wrapper">
+				<button class="order-consultation-modal__close-button"></button>
+				<div class="order-consultation__content">
+					<h2 class="order-consultation__title">Заказать консультацию</h2>
+					<p class="order-consultation__description">Оставьте ваши контакты и&nbsp;наш специалист свяжется с&nbsp;вами в&nbsp;течение рабочего дня.</p>
+				</div>
+				<div class="order-consultation__form-wrapper">
+					<form class="order-consultation__form" id="order-consultation-form" novalidate>
+						<div class="order-consultation__form-field">
+							<div class="form-group">
+								<input 
+									class="order-consultation__input form-control" 
+									type="text" 
+									name="name" 
+									placeholder="Имя" 
+									required data-pristine-required-message="Пожалуйста, введите свое имя"
+								>
+							</div>
+							<div class="form-group">
+								<input 
+									class="order-consultation__input form-control" 
+									type="text" 
+									name="company" 
+									placeholder="Компания" 
+									required 
+									data-pristine-required-message="Пожалуйста, введите название Вашей компании"
+								>
+							</div>
+							<div class="form-group">
+								<input 
+									class="order-consultation__input form-control" 
+									type="tel" 
+									name="phone" 
+									placeholder="Телефон"
+									data-pristine-pattern="/^([0-9]|\+|\-|\(|\)|\s)*$/"
+									required 
+									data-pristine-required-message="Пожалуйста, введите свой номер телефона"
+									data-pristine-pattern-message="Неверный формат номера телефона"
+								>
+							</div>
+							<div class="form-group">
+								<input 
+									class="order-consultation__input form-control" 
+									type="email" 
+									name="E-mail" 
+									placeholder="E-mail" 
+									required 
+									data-pristine-required-message="Пожалуйста, введите свой адрес электронной почты"
+									data-pristine-email-message="Адрес электронной почты вводится в формате example@example.xxx"
+								>
+							</div>
+							<button class="order-consultation__submit button" type="submit">Заказать консультацию</button>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+	<div class="get-document-modal">
+	<div class="get-document-modal__overlay"></div>
+	<div class="get-document-modal__content">
+		<div class="get-document-modal__box">
+			<div class="get-document-modal__wrapper">
+				<button class="get-document-modal__close-button"></button>
+				<div class="get-document__content">
+					<h2 class="get-document__title">Запросить документы</h2>
+					<p class="get-document__description">Оставьте ваши данные и&nbsp;мы отправим вам документы в&nbsp;течение рабочего дня.</p>
+				</div>
+				<div class="get-document__form-wrapper">
+					<form class="get-document__form" id="get-document-form" novalidate>
+						<div class="get-document__form-field">
+							<div class="form-group">
+								<input
+									class="get-document__input form-control"
+									type="email"
+									name="email"
+									placeholder="E-mail"
+									required
+									data-pristine-required-message="Пожалуйста, введите свой адрес электронной почты"
+									data-pristine-email-message="Адрес электронной почты вводится в формате example@example.xxx"
+								>
+							</div>
+							<div class="form-group">
+								<input
+									class="get-document__input form-control"
+									type="text"
+									name="name"
+									placeholder="Имя"
+									required data-pristine-required-message="Пожалуйста, введите свое имя"
+								>
+							</div>
+							<div class="form-group">
+								<input
+									class="get-document__input form-control"
+									type="text"
+									name="nameCompany"
+									placeholder="Название компании"
+									required data-pristine-required-message="Пожалуйста, введите название компании"
+								>
+							</div>
+							<div class="form-group">
+								<input
+									class="get-document__input form-control"
+									type="text"
+									name="fieldCompany"
+									placeholder="Область деятельности"
+									required data-pristine-required-message="Пожалуйста, введите область деятельности компании"
+								>
+							</div>
+							<button class="get-document__submit button" type="submit">Получить документы</button>
+						</div>
+					</form>
+					<div class="get-document__send-result"></div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+		</main>
+		<footer class="footer">
+	<div class="container">
+		<div class="footer__wrapper">
+			<div class="footer__top">
+				<a class="footer__logo-link" href="#">
+					<svg class="footer__logo" width="120" height="96" viewbox="0 0 120 96">
+						<use xlink:href="/assets/images/icons.svg#logotype"></use>
+					</svg>
+				</a>
+			</div>
+			<div class="footer__content">
+				<div class="footer__company-info">
+					<div class="footer__company-details footer__company-details--box">
+						<span class="footer__company-name">ООО «СТРИКТ»</span>
+  						<span class="footer__company-inn">ИНН: 7720868971</span>
+					</div>
+					<div class="footer__company-details">Юридический адрес: 111524, г. Москва, Электродная, д. 2, стр. 34, помещ. 19/3</div>
+					<div class="footer__company-details">ОКВЭД 62.01 Разработка компьютерного программного обеспечения </div>
+					<div class="footer__company-details">Генеральный директор: Никаноров Георгий Максимович</div>
+				</div>
+				<ul class="footer__menu">
+					<li class="footer__menu-section footer__menu-section--resolve">
+						<div class="footer-section">
+							<h4 class="footer-section__title">Решение</h4>
+							<ul class="footer-section__list">
+								<li class="footer-section__item">
+									<a class="footer-section__link" href="#advantages">Преимущества</a>
+								</li>
+								<li class="footer-section__item">
+									<a class="footer-section__link" href="#ai-solution">Варианты применения</a>
+								</li>
+							</ul>
+						</div>
+					</li>
+					<li class="footer__menu-section footer__menu-section--company">
+						<div class="footer-section">
+							<h4 class="footer-section__title">Компания</h4>
+							<ul class="footer-section__list">
+								<li class="footer-section__item">
+									<a class="footer-section__link" href="#how-work">О нас</a>
+								</li>
+								<li class="footer-section__item">
+									<a class="footer-section__link" href="#projects">Кейсы</a>
+								</li>
+							</ul>
+						</div>
+					</li>
+					<li class="footer__menu-section footer__menu-section--contacts">
+						<div class="footer-section">
+							<h4 class="footer-section__title">Контакты</h4>
+							<ul class="footer-section__list">
+								<li class="footer-section__item">
+									<a class="footer-section__link" href="tel:+79936287384">+7 993 628-73-84</a>
+								</li>
+								<li class="footer-section__item">
+									<a class="footer-section__link" href="mailto:nikanorov@strkt.ru">nikanorov@strkt.ru</a>
+								</li>
+								<li class="footer-section__item">
+									<ul class="social-media">
+										
+										<li class="social-media__item">
+											<a class="social-media__link" href="https://t.me/strikt_ai" target="_blank">@gnikanorov</a>
+										</li>
+									</ul>
+								</li>
+							</ul>
+						</div>
+					</li>
+				</ul>
+			</div>
+			<div class="footer__copyright">
+				<span class="footer__copyright-text">© 2025 Strikt</span>
+				<a href="/" class="footer__copyright-text">Политика конфиденциальности</a>
+			</div>
+		</div>
+	</div>
+</footer>
+			<script src="/public/js/lazysizes.min.js"></script>
+	<script src="/public/js/pristine.js" type="text/javascript"></script>
+	<script src="./assets/js/index.bundle.js"></script>
+	</body>
+</html>

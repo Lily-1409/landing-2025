@@ -1,0 +1,22 @@
+<svg width="669" height="580" viewBox="0 0 669 580" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g clip-path="url(#clip0_2051_14)">
+<g filter="url(#filter0_d_2051_14)">
+<rect width="573" height="511" transform="matrix(-1 0 0 1 630 69)" fill="#CA1212"/>
+</g>
+</g>
+<defs>
+<filter id="filter0_d_2051_14" x="52" y="28" width="663" height="601" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+<feOffset dx="40" dy="4"/>
+<feGaussianBlur stdDeviation="22.5"/>
+<feComposite in2="hardAlpha" operator="out"/>
+<feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.07 0"/>
+<feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_2051_14"/>
+<feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_2051_14" result="shape"/>
+</filter>
+<clipPath id="clip0_2051_14">
+<rect width="669" height="580" fill="white" transform="matrix(-1 0 0 1 669 0)"/>
+</clipPath>
+</defs>
+</svg>
